@@ -19,7 +19,19 @@ public class Operations {
         System.out.println(m);
         System.out.println(test1);
         System.out.println(test2);
-        System.out.println(n = 10); // L-value
+        System.out.println(n = 10); // Assignments in Java has values
         //System.out.println(++n++); Does not compile , after ++n, the L-value is gone, means storage is gone. "To have Side effects you need to have L-values"
+
+        // Day 2
+        System.out.println("------------Day 2------------");
+        System.out.println(7%3);
+        System.out.println(7%-3); // % operator (remainder) takes sign from left hand operand and ignores the sign of right hand operand
+
+        String S1 = "Hello";
+        String S2 = "Hello";
+        String S3 = new String("Hello");
+        System.out.println(S1 == S2); // true
+        System.out.println(S1 == S3); //false
+
     }
 }

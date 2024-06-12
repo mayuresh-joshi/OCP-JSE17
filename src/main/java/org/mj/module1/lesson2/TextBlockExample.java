@@ -19,7 +19,7 @@ public class TextBlockExample {
                 "Joshi"
                 \"\"\"""";
 
-        System.out.println(textBlock);
+        System.out.println("'"+textBlock+"'");
         System.out.println(newLineEscaped);
         System.out.println(howToAddBackslash);
         System.out.println(howToAddDoubleQuotes);

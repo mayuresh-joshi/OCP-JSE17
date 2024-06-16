@@ -17,6 +17,15 @@ public class SwitchStatements {
             default:
                 break;
         }
+
+        //long l = 1; // switch of long type not allowed
+        int l = 1;
+
+        switch (l) {
+
+        }
+
+
         return;
         //System.out.println("hello"); // compilation fails
     }

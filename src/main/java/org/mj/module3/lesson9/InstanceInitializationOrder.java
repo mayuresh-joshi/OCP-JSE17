@@ -19,6 +19,7 @@ public class InstanceInitializationOrder {
     }
 
     InstanceInitializationOrder(String s) {
+        this();
         System.out.println("In parameterized constructor");
         this.s = s;
     }

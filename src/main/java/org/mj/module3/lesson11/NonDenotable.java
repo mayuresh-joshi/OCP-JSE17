@@ -1,7 +1,5 @@
 package org.mj.module3.lesson11;
 
-import java.io.Serializable;
-
 public class NonDenotable {
     public static void main(String[] args) {
         String s = "Hello";

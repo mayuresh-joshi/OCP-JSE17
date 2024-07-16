@@ -17,7 +17,10 @@ interface A {
 
     void doA2(); // public and abstract by default
 
-    private void m5() {}; // valid
+    private void m5() {
+    }
+
+    ; // valid
 
     //Instance methods not allowed without default modifier
     // public void doA3(){}
@@ -27,6 +30,16 @@ class AImplementor implements A {
     @Override
     public void doA2() {
 
+    }
+}
+
+
+// Irrelevant but remember final fields can be initialized in constructors
+class Random {
+    public final String asd;
+
+    Random(String m) {
+        this.asd = m;
     }
 }
 

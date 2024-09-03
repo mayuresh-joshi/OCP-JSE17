@@ -2,7 +2,7 @@ package org.mj;
 
 public class Summary {
     public static void main(String[] args) {
-        String summaryPoints= """
+        String summaryPoints = """
                 1. Study carefully.
                 
                 2. Keep practicing even after certification.

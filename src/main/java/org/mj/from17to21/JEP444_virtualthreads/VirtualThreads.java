@@ -15,7 +15,8 @@ public class VirtualThreads {
     private static void testPlatformThreads(int maximum) {
         long time = System.currentTimeMillis();
 
-        // for Virtual threads use -> Executors.newVirtualThreadPerTaskExecutor()
+        // For Virtual threads use -> Executors.newVirtualThreadPerTaskExecutor()
+        // For Platform threads use -> Executors.newCachedThreadPool()
         try (var executor = Executors.newCachedThreadPool()) {
             IntStream.range(0, maximum).forEach(i -> {
                 executor.submit(() -> {

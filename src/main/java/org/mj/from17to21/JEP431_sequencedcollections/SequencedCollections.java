@@ -45,7 +45,7 @@ public class SequencedCollections {
     }
 
     private static void sequencedMap() {
-        LinkedHashMap<Integer,String> hm = new LinkedHashMap<Integer,String>();
+        LinkedHashMap<Integer,String> hm = new LinkedHashMap<>();
         hm.put(1, "Alpha");
         hm.put(2, "Bravo");
         hm.put(3, "Charlie");

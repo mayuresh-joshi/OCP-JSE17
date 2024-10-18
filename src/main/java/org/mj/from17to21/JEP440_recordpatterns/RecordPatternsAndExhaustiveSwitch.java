@@ -27,14 +27,14 @@ public class RecordPatternsAndExhaustiveSwitch {
         switch (p1) {                 // Error! Hover over it.
             case Pair<A>(A a, B b) -> {}
             case Pair<A>(B b, A a) -> {}
-            //case Pair<A>(A x, A y) -> {}
+            case Pair<A>(A x, A y) -> {} // Comment this line and see the error.
         }
 
         switch (p2) {                        // Error!  Hover over it
             case Pair<I>(C fst, D snd) -> {}
             case Pair<I>(D fst, C snd) -> {}
             case Pair<I>(I fst, C snd) -> {}
-            //case Pair<I>(D x, D y) -> {}
+            case Pair<I>(D x, D y) -> {} // Comment this line and see the error.
         }
 
         // Covers all cases

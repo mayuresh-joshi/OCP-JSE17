@@ -1,4 +1,4 @@
-package org.mj.misctopics.DSTHandling;
+package org.mj.misctopics.dsthandling;
 
 import java.time.LocalDateTime;
 import java.time.ZoneId;
@@ -8,7 +8,7 @@ import java.time.temporal.ChronoUnit;
 public class DSTHandlingUsingDateTimeAPI {
     public static void main(String[] args) {
 
-        // ref -https://www.baeldung.com/java-daylight-savings
+        // ref - https://www.baeldung.com/java-daylight-savings
 
         // LocalDateTime does not have any zone related info and can't handle DST
         LocalDateTime localDateTimeBeforeDST = LocalDateTime

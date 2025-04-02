@@ -1,5 +1,7 @@
 package org.mj.from21to25.JEP485_streamgatherers;
+public class Gatherer1 {}
 
+/*
 import java.time.Duration;
 import java.time.Instant;
 import java.util.List;
@@ -57,3 +59,5 @@ public class Gatherer1 {
         System.out.println(Duration.between(start, end).toMillis());
     }
 }
+*/
+

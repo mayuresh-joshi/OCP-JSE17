@@ -15,7 +15,7 @@ class C extends B {
 }
 
 interface Something {
-    default final void asd() {
+    default /*final*/ void asd() {
     }
 }
 

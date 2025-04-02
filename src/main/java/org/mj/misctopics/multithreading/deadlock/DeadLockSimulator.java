@@ -38,7 +38,7 @@ public class DeadLockSimulator {
 
         ExecutorService executorService = Executors.newVirtualThreadPerTaskExecutor();
         executorService.submit(task1);
-        executorService.submit(task1);
+        executorService.submit(task2);
         System.out.println("Tasks submitted");
         executorService.close();
         System.out.println("Executor service closed");

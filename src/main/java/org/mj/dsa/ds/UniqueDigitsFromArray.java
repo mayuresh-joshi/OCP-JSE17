@@ -1,6 +1,5 @@
 package org.mj.dsa.ds;
 
-
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
@@ -13,17 +12,15 @@ public class UniqueDigitsFromArray {
      * OP: [1,2,3,4,5,6]
      * */
     public static void main(String[] args) {
-        int[] ip = new int[]{1, 23, 456, 34, 16};
+        int[] ip = new int[]{1, 23, 456, 34, 106};
         Set<Integer> opList = new HashSet<>();
-        for (int i : ip) {
-            if (i == 0) {
-                opList.add(i);
+        for (int current : ip) {
+            if (current == 0) {
+                opList.add(current);
                 continue;
             }
-
-            int current = i;
             int lastDigit = current % 10;
-            while (lastDigit != 0) {
+            while (current != 0) {
                 opList.add(lastDigit);
                 current = current / 10;
                 lastDigit = current % 10;
@@ -32,4 +29,3 @@ public class UniqueDigitsFromArray {
         System.out.println(Arrays.toString(opList.toArray()));
     }
 }
-
